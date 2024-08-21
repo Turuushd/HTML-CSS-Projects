@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --title-color: #303030;
+    --tag-color: #ABABAB;
+}
+
+body{
+    background-color: #303030;
+}
+
+.container{
+    width: 1260px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #101010;
+}
+
+.head{
+    text-align: center;
+}
+
+.head svg{
+    margin: 19px 0 19px 0;
+}
+
+.main{
+    background-color: #F4F4F4;
+    padding-top: 120px;
+}
+
+.hero-details{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.hero-title{
+    font-size: 72px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 8px;
+}
+
+.hero-tag{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--tag-color);
+}
+
+.hero-images{
+    display: flex;
+    gap: 21px;
+    margin-bottom: 240px;
+}
+
+.destination-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 240px;
+}
+
+.destination-tag{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--tag-color);
+    margin-bottom: 10px;
+}
+
+.destination-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 80px;
+}
+
+.destination-route ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.destination-route ul::before{
+    content: "";
+    position: absolute;
+    border: 1px dashed #1D1F24;
+    top: 0;
+    bottom: 0;
+    left: 28px;
+}
+
+.destination-route ul li{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.day{
+    width: 56px;
+    height: 56px;
+    background-color: #1D1F24;
+    border-radius: 40px;
+    color: #16A94A;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.location-place{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.location-city{
+    font-size: 12px;
+    color: #777777;
+}
+
+.pricing-section{
+    margin-bottom: 240px;
+}
+
+.pricing-tag{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--tag-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pricing-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.pricing-options{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cheap{
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.cheap:hover{
+    border: 2px solid #18BA51;
+    transition: all 0.2s ease;
+}
+
+.cheap-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 28px;
+}
+
+.cheap ul{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+
+.cheap ul li{
+    font-size: 20px;
+    font-weight: 500;
+    color: #777777;
+}
+
+.cheap-payment{
+    font-size: 32px;
+    font-weight: bold;
+    color: #303030;
+    margin-left: 109px;
+}
+
+.expensive{
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 24px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.expensive:hover{
+    border: 2px solid #18BA51;
+    transition: all 0.2s ease;
+}
+
+.expensive-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 28px;
+}
+
+.expensive ul{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-left: 20px;
+    margin-bottom: 59px;
+}
+
+.expensive ul li:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    color: #777777;
+}
+
+.expensive ul li{
+    font-size: 20px;
+    font-weight: 500;
+    color: #777777;
+}
+
+.expensive-payment{
+    font-size: 32px;
+    font-weight: bold;
+    color: #303030;
+    margin-left: 109px;
+}
+
+.ready-section{
+    background-color: #171717;
+}
+
+.ready-detail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ready-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 150px;
+}
+
+.ready-section button{
+    background-color: #18BA51;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 2px solid #18BA51;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+
+.ready-section button:hover{
+    background-color: #171717;
+    color: #18BA51;
+    transition: all 0.2s ease;
+}
+
+footer{
+    background-color: #101010;
+}
+
+.footer-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    width: 81px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 80px 0;
+}
+
+.footer-socials{
+    display: flex;
+    gap: 20px;
+}
+
+.facebook{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #303030;
+    border-radius: 4px;
+}
+
+.facebook i{
+    font-size: 24px;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.facebook i:hover{
+    color: #1877f2;
+}
+
+.facebook a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.facebook a:hover{
+    color:  #1877f2;
+}
+
+.instagram{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #303030;
+    border-radius: 4px;
+}
+
+.instagram i{
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.instagram i:hover{
+    color: #833ab4;
+}
+
+.instagram a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.instagram a:hover{
+    color: #833ab4;
+}
